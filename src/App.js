@@ -1,4 +1,5 @@
 import Form from './components/Form';
+import Expenses from './components/Expenses';
 import { useState } from 'react';
 
 function App() {
@@ -14,6 +15,16 @@ function App() {
             setAmount={setAmount}
             setLeftAmount={setLeftAmount}
           />
+
+          <div className="row">
+            <div className="one-half column">
+              <Expenses />
+            </div>
+
+            <div className="one-half column">
+              2
+            </div>
+          </div>
         </div>
       </header>
     </div>
